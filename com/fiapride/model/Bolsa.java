@@ -7,9 +7,12 @@ public class Bolsa {
 
     private double preco;
 
-    public Bolsa(String marca, double preco) {
+    private Dono dono;
+
+    public Bolsa(String marca, double preco, Dono dono) {
         this.marca = marca;
         this.preco = preco;
+        this.dono  = dono;
     }
 
     // Método para aumentar o preço
@@ -48,4 +51,13 @@ public class Bolsa {
     public void setPreco(double preco) {
         this.preco = preco;
     }
+
+    public Dono getDono() {
+        return dono;
+    }
+
+    public void setDono(Dono dono){
+        this.dono = dono;
+    }
+
 }
